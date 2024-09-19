@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixiJS Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="file" id="image-input" accept="image/*">
+    <div id="canvas-container"></div>
+    <script type="module">
+        import { runApp } from './main.js';
+
+        window.addEventListener('load', () => {
+            console.log('Window onload event fired');
+            runApp();
+        });
+    </script>
+</body>
+</html>
